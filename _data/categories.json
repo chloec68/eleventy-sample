@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Photos",
+        "photo":{
+            "alt":"xxx",
+            "height":450,
+            "width":450,
+            "src":"/assets/icons/categories/"
+        }
+    },
+    {
+        "id":2,
+        "name":"Blog",
+        "photo":{
+            "alt":"xxx",
+            "height":450,
+            "width":450,
+            "src":"/assets/icons/categories/"
+        }
+    }
+]
