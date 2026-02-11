@@ -1,0 +1,17 @@
+:root{
+    --floral-white:#FFFAF1;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:var(--floral-white);
+    font-family:"Dosis", sans-serif;
+}
+
+img{
+    width:50%;
+}
