@@ -46,7 +46,21 @@ body{
     
 }
 
+/* ______CATEGORIES COMPONENT______ */
 
-img{
+.categories-wrapper{
+    width: 100%;
+    display: flex;
+ 
+    align-items: space-around;
+}
+
+.single-category-wrapper{
+    width:fit-content;
+    text-align: center;
+}
+
+.categories-icons{
     width:10%;
+    border-radius:90px;
 }

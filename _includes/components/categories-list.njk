@@ -1,9 +1,10 @@
-{% for entry in categories %}
-
-<p>{{ entry.name }}</p>
-<img src=" {{entry.photo.src }} " alt="{{ entry.photo.alt }} "> 
-    
-{% endfor %}
-
+<div class="categories-wrapper">
+    {% for entry in categories %}
+    <div class="single-category-wrapper">
+        <img src=" {{entry.photo.src }} " alt="{{ entry.photo.alt }}" class="categories-icons" > 
+        <p>{{ entry.name }}</p>
+    </div>
+    {% endfor %}
+</div>
 
 
