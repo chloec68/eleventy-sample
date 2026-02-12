@@ -21,3 +21,19 @@
 		{% include "components/footer.njk" ignore missing %}
 	</body>
 </html>
+
+<script>
+	function darkMode(){
+
+		const body = document.body;
+		body.classList.toggle("dark-mode");
+
+			if (body.classList.contains("dark-mode")) {
+				document.getElementById("welcome-logo").src = "/assets/icons/welcome2.png";
+				document.getElementById("dark-mode-logo").src = "/assets/icons/strike.png";
+			}else{
+				document.getElementById("welcome-logo").src = "/assets/icons/welcome3.png";
+				document.getElementById("dark-mode-logo").src = "/assets/icons/moon.png";
+			}
+	}
+</script>

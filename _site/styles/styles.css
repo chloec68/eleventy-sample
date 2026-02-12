@@ -1,5 +1,7 @@
+/* GENERAL */
 :root{
     --floral-white:#FFFAF1;
+    --carbon-black:#191716;
 }
 
 html, body{
@@ -7,10 +9,43 @@ html, body{
     padding:0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color:var(--floral-white);
     font-family:"Dosis", sans-serif;
+    color:var(--carbon-black);
 }
+
+/* ______DARK MODE______ */
+.dark-mode{
+    background-color: var(--carbon-black);
+    color: var(--floral-white);
+}
+
+/* ______HEADER COMOPONENT______ */
+.header-wrapper{
+    width:100%;
+    padding:1em;
+    text-align: right;
+}
+
+#dark-mode-logo{
+    width:3%;
+}
+
+/* ______HOME PAGE / INDEX______ */
+.welcome-logo-wrapper{
+    width:100%;
+    text-align: center;
+}
+#welcome-logo{
+    width: 40%;
+    
+}
+
 
 img{
     width:10%;
