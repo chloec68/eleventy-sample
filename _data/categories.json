@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "name":"Photos",
+        "name":"Gallery",
         "photo":{
             "alt":"xxx",
             "height":450,
@@ -12,6 +12,16 @@
     {
         "id":2,
         "name":"Blog",
+        "photo":{
+            "alt":"xxx",
+            "height":450,
+            "width":450,
+            "src":"/assets/icons/camera.png"
+        }
+    },
+    {
+        "id":3,
+        "name":"Me,myself and I",
         "photo":{
             "alt":"xxx",
             "height":450,

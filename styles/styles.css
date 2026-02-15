@@ -1,3 +1,7 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Indie+Flower&display=swap');
+
+
 /* GENERAL */
 :root{
     --floral-white:#FFFAF1;
@@ -42,9 +46,18 @@ body{
     width:100%;
     text-align: center;
 }
+
 #welcome-logo{
-    width: 40%;
-    
+    width: 40%;   
+}
+
+.intro-wrapper{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 3em;
+    color: #3D348B;
 }
 
 /* ______CATEGORIES COMPONENT______ */
@@ -64,4 +77,10 @@ body{
 .categories-icons{
     width:10%;
     border-radius:90px;
+    cursor: pointer;
+}
+
+/* DARK MODE */
+.intro-wrapper.dark-mode {
+    color: #FFB0FF !important;
 }
