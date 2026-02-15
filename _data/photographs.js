@@ -2,9 +2,10 @@ const fs = require("fs/promises"); // file system = built-in Node.js module => r
 const path = require("path"); // path = built-in Node.js module => build safe paths 
 const { exiftool } = require("exiftool-vendored"); // external package installed with npm = EXIF module => extract metadata from each .jpg
 
-const imageDir = "src/assets/photographs"; // creates a variable that stores folder where images are ;
+const imageDir = "assets/photographs"; // creates a variable that stores folder where images are ;
 
-module.exports = async function () { //In NodeJS, module.exports is used to share functions, objects, or values from one file to the other file so that other files can use them. 
+module.exports = async function () { 
+    //In NodeJS, module.exports is used to share functions, objects, or values from one file to the other file so that other files can use them. 
     
     const filesName = await fs.readdir(imageDir) //filesName holds an array ;
 
@@ -19,10 +20,10 @@ module.exports = async function () { //In NodeJS, module.exports is used to shar
 
             return {
                 title: path.parse(file).name,
-                date: tags.DateTimeOriginal || tags.CreateDate,
+                date: tags.DateTimeOriginal.toDate() ? tags.DateTimeOriginal.toDate() : null,
                 src: `/assets/photographs/${file}`,
                 alt: path.parse(file).name,
-                credit: "Photo by You"
+                credit: "TEST TEST TEST"
             };
         })
     );
@@ -36,4 +37,5 @@ module.exports = async function () { //In NodeJS, module.exports is used to shar
     // Promise.all(...) → waits for all of them
     // await → pauses until all metadata is read
     // photos becomes an array of objects 
+
 };
