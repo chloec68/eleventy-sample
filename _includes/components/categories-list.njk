@@ -1,10 +1,12 @@
 <div class="categories-wrapper">
     {% for entry in categories %}
     <div class="single-category-wrapper">
-        <img src=" {{entry.photo.src }} " alt="{{ entry.photo.alt }}" class="categories-icons" > 
+        <a href="{{ entry.photo.href }}"><img src=" {{ entry.photo.src }} " alt="{{ entry.photo.alt }}" class="categories-icons" > </a>
         <p>{{ entry.name }}</p>
     </div>
     {% endfor %}
+
+    <p>nique ta mère</p>
 </div>
 
 

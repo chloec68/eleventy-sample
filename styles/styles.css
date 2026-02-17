@@ -22,11 +22,20 @@ body{
     font-family:"Dosis", sans-serif;
     color:var(--carbon-black);
 }
+/* ______LAYOUT______ */
+.wrapper{
+    width:90%;
+    margin: auto;
+}
 
 /* ______DARK MODE______ */
 .dark-mode{
     background-color: var(--carbon-black);
     color: var(--floral-white);
+}
+
+.intro-wrapper.dark-mode {
+    color: #FFB0FF !important;
 }
 
 /* ______HEADER COMOPONENT______ */
@@ -80,7 +89,5 @@ body{
     cursor: pointer;
 }
 
-/* DARK MODE */
-.intro-wrapper.dark-mode {
-    color: #FFB0FF !important;
-}
+/* ______GALLERY ______ */
+
