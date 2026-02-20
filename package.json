@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:photos": "node scripts/build-exif.js",
+    "build:photos": "node src/assets/scripts/build-exif.js",
     "start": "eleventy --serve"
   },
   "keywords": [],

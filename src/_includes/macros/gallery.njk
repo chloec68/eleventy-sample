@@ -1,0 +1,16 @@
+{% macro gallery(photographs,album) %}
+    <div class="gallery">
+        {% for entry in photographs %}
+            {% if entry.album === album %}
+            <div class="gallery-item">
+                <a href="{{entry.src}}" target="_blank">
+                    <img src="{{entry.src}}" alt="{{entry.alt}}">
+                </a>
+            </div>
+                        {# {% if entry.description %}
+                    <div class="desc">{{entry.description}}</div>
+                {% endif %} #}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endmacro %}

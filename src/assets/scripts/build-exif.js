@@ -2,8 +2,8 @@ const fs = require("fs/promises");
 const path = require("path");
 const { exiftool } = require("exiftool-vendored");
 
-const imageDir = "assets/photographs";
-const outputFile = "_data/photographs.json";
+const imageDir = "src/assets/photographs/sicily";
+const outputFile = "src/_data/photographs/photographs-sicily.json";
 
 async function build() {
   console.log("🚀 Build script started");
@@ -13,7 +13,7 @@ async function build() {
 
     const files = filesName.filter(file => {
       const lower = file.toLowerCase();
-      return lower.endsWith(".jpg") || lower.endsWith(".jpeg");
+      return lower.endsWith(".jpg") || lower.endsWith(".jpeg") || lower.endsWith(".gif");
     });
 
     const photos = await Promise.all(
@@ -29,6 +29,7 @@ async function build() {
               : null,
             src: `/assets/photographs/${file}`,
             alt: path.parse(file).name,
+            album: "sicily"
           };
         } catch (err) {
           console.error("Exif error for:", file);
