@@ -24,18 +24,22 @@
 		const body = document.body;
 		body.classList.toggle("dark-mode");
 
-		if (document.getElementById("darkModeButton")){
-			darkModeButton.addEventListener('click',function(){
-				if (document.getElementById("welcome-logo")){
-					if(document.getElementById("welcome-logo").src === "welcome3.png"){
-					console.log(document.getElementById("#welcome-logo"));
-					document.getElementById("welcome-logo").src === "welcome2.png";
-					}else{
-					document.getElementById("welcome-logo").src === "welcome3.png";
-					}
-				}
-			})
+		darkModeButton = document.getElementById("dark-mode-logo");
+		
+		if(darkModeButton.src.includes("moon.png")){
+			darkModeButton.src = "/assets/icons/brightness.png";
+			console.log("mode sombre activé")
+		}else{
+			console.log("mode sombre désactivé")
+			darkModeButton.src = "/assets/icons/moon.png";
 		}
 	}
+
+
+
+				
+
+					
+			
 
 </script>
