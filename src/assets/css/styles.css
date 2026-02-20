@@ -89,31 +89,23 @@ body{
     cursor: pointer;
 }
 
-/* ______GALLERY CAROUSEL______ */
+/* ______GALLERY______ */
 
     .gallery {
-        background-color: #f9fafb
-;
         width:90%;
         margin : auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: baseline;
         gap:3rem;
     }
 
-    .gallery-item {
-        border: 1px solid #ccc;
-        width: calc(25% - 20px);
+    .gallery-item {   
         height: fit-content;
-        overflow: hidden;
         border-radius: 2px;
         width : 30%;
-    }
-
-    .gallery-item:hover {
-        border: 1px solid #777;
+        margin: auto;
+        overflow: hidden;
     }
 
     .gallery-item img {
@@ -122,13 +114,17 @@ body{
         transition: transform 0.7s ease;
     }
 
-    .gallery-item img:hover{
-        transform : scale(1.2);
-    }
+   
+    .gallery-item:hover img {
+    transform: scale(1.4);
+}
 
     .gallery-item .desc {
         padding: 15px;
         text-align: center;
+        font-family: "Indie Flower", cursive;
+        text-decoration:underline;
+        font-size: 1.5em;
     }
 
     @media only screen and (max-width: 768px) {
@@ -140,5 +136,6 @@ body{
     @media only screen and (max-width: 480px) {
         .gallery-item {
             width: calc(100% - 20px);
+
         }
     }

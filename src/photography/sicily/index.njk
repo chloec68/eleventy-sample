@@ -1,0 +1,25 @@
+---
+title: "Sicily"
+permalink: "/photography/sicily/index.html"
+album: sicily
+layout: "/layout.njk"
+---
+<h1>Sicily</h1>
+
+<div class="gallery">
+    {% for entry in photographs %}
+        {% if entry.album === "sicily" %}
+        <div class="gallery-item">
+            <a href="{{entry.src}}" target="_blank">
+                <img src="{{entry.src}}" alt="{{entry.alt}}">
+            </a>
+        </div>
+                    {# {% if entry.description %}
+                <div class="desc">{{entry.description}}</div>
+            {% endif %} #}
+        {% endif %}
+    {% endfor %}
+        
+
+</div>
+

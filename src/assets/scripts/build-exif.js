@@ -29,7 +29,6 @@ async function build() {
               : null,
             src: `/assets/photographs/${file}`,
             alt: path.parse(file).name,
-            credit: "TEST TEST TEST"
           };
         } catch (err) {
           console.error("Exif error for:", file);
