@@ -42,7 +42,6 @@ body{
 .header-wrapper{
     width:100%;
     padding:1em;
-    text-align: right;
 }
 
 #dark-mode-logo{
@@ -96,14 +95,20 @@ body{
         margin : auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        gap:3rem;
+        justify-content:center;
+        align-items: center;
+        gap:50px;
+    }
+
+    .gallery-item-container{
+        width: 30%;
+        position: relative;
     }
 
     .gallery-item {   
         height: fit-content;
         border-radius: 2px;
-        width : 30%;
+        width : 100%;
         margin: auto;
         overflow: hidden;
     }
@@ -115,16 +120,31 @@ body{
     }
 
    
-    .gallery-item:hover img {
+    .gallery-item-container:hover img {
     transform: scale(1.4);
-}
+    }
 
-    .gallery-item .desc {
-        padding: 15px;
+    .gallery-item-container:hover .desc{
+        opacity: 1;
+    }
+
+    .gallery-item-container .desc {
         text-align: center;
         font-family: "Indie Flower", cursive;
         text-decoration:underline;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        color: var(--carbon-black);
+        padding:0px;
+        margin:0px;
+        
+        position:relative;
+        z-index:2;
+        background: rgba(248, 248, 248, 0.8);
+        transition: .3s;
+        bottom: 0;
+        left: 0;
+        transform: translate(0em, -2em);
+        opacity: 0;
     }
 
     @media only screen and (max-width: 768px) {
@@ -139,3 +159,5 @@ body{
 
         }
     }
+
+

@@ -21,22 +21,19 @@
 
 <script>
 	function darkMode(){
-
 		const body = document.body;
 		body.classList.toggle("dark-mode");
 
-		if (document.querySelector(".intro-wrapper")){
-
-			document.querySelector(".intro-wrapper").addEventListener("click", () => {
-			document.querySelector(".intro-wrapper").classList.toggle("dark-mode");
-
-			if (body.classList.contains("dark-mode")) {
-				document.getElementById("welcome-logo").src = "/assets/icons/welcome2.png";
-				document.getElementById("dark-mode-logo").src = "/assets/icons/strike.png";
-			}else{
-				document.getElementById("welcome-logo").src = "/assets/icons/welcome3.png";
-				document.getElementById("dark-mode-logo").src = "/assets/icons/moon.png";
-			}
+		if (document.getElementById("darkModeButton")){
+			darkModeButton.addEventListener('click',function(){
+				if (document.getElementById("welcome-logo")){
+					if(document.getElementById("welcome-logo").src === "welcome3.png"){
+					console.log(document.getElementById("#welcome-logo"));
+					document.getElementById("welcome-logo").src === "welcome2.png";
+					}else{
+					document.getElementById("welcome-logo").src === "welcome3.png";
+					}
+				}
 			})
 		}
 	}
