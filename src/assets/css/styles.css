@@ -3,64 +3,84 @@
 
 
 /* GENERAL */
-:root{
-    --floral-white:#FFFAF1;
-    --carbon-black:#191716;
+:root {
+    --floral-white: #FFFAF1;
+    --carbon-black: #191716;
 }
 
-html, body{
-    margin:0;
-    padding:0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-*{
+* {
     box-sizing: border-box !important;
 }
 
-body{
-    background-color:var(--floral-white);
-    font-family:"Dosis", sans-serif;
-    color:var(--carbon-black);
+body {
+    background-color: var(--floral-white);
+    font-family: "Dosis", sans-serif;
+    color: var(--carbon-black);
+    font-size: 1em;
 }
+
+a{
+    cursor: pointer;
+}
+
 /* ______LAYOUT______ */
-.wrapper{
-    width:90%;
+.wrapper {
+    width: 90%;
     margin: auto;
 }
 
 /* ______DARK MODE______ */
-.dark-mode{
+.dark-mode {
     background-color: var(--carbon-black);
-    color: var(--floral-white);
+    color: var(--floral-white) !important;
 }
 
-.intro-wrapper.dark-mode {
-    color: #FFB0FF !important;
+.dark-mode .intro-wrapper, .dark-mode a{
+    color:#FFB0FF;
 }
 
 /* ______HEADER COMOPONENT______ */
-.header-wrapper{
-    width:100%;
-    padding:1em;
+.header-wrapper {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    font-size: 1.5em;
 }
 
-#dark-mode-logo{
-    width:3%;
+#dark-mode-logo {
+    width: 2em;
     cursor: pointer;
 }
 
+.header-wrapper a {
+    text-decoration: none;
+}
+
+.header-wrapper a:hover {
+    color: #FFB0FF;
+    transition: 0.2s ease;
+}
+
 /* ______HOME PAGE / INDEX______ */
-.welcome-logo-wrapper{
-    width:100%;
+.welcome-logo-wrapper {
+    width: 100%;
     text-align: center;
 }
 
-#welcome-logo{
-    width: 40%;   
+#welcome-logo {
+    width: 40%;
 }
 
-.intro-wrapper{
-    width:80%;
+.intro-wrapper {
+    width: 80%;
     margin: auto;
     text-align: center;
     font-family: "Indie Flower", cursive;
@@ -70,94 +90,101 @@ body{
 
 /* ______CATEGORIES COMPONENT______ */
 
-.categories-wrapper{
+.categories-wrapper {
     width: 100%;
     display: flex;
- 
+
     align-items: space-around;
 }
 
-.single-category-wrapper{
-    width:fit-content;
+.single-category-wrapper {
+    width: fit-content;
     text-align: center;
 }
 
-.categories-icons{
-    width:10%;
-    border-radius:90px;
+.categories-icons {
+    width: 10%;
+    border-radius: 90px;
     cursor: pointer;
 }
 
 /* ______GALLERY______ */
 
-    .gallery {
-        width:90%;
-        margin : auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: center;
-        gap:50px;
-    }
+.gallery {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 
-    .gallery-item-container{
-        width: 30%;
-        position: relative;
-    }
+.gallery-item-container {
+    width: 30%;
+    position: relative;
+}
 
-    .gallery-item {   
-        height: fit-content;
-        border-radius: 2px;
-        width : 100%;
-        margin: auto;
-        overflow: hidden;
-    }
+.gallery-item {
+    height: fit-content;
+    border-radius: 2px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 
-    .gallery-item img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.7s ease;
-    }
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s ease;
+}
 
-   
-    .gallery-item-container:hover img {
+
+.gallery-item-container:hover img {
     transform: scale(1.4);
+    cursor: pointer;
+}
+
+.gallery-item-container:hover .desc {
+    opacity: 1;
+}
+
+.gallery-item-container .desc {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    background: rgba(248, 248, 248, 0.8);
+    transition: .3s;
+    opacity: 0;
+}
+
+.gallery-item-container .desc p {
+    color: var(--carbon-black);
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
     }
+}
 
-    .gallery-item-container:hover .desc{
-        opacity: 1;
+@media only screen and (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px);
+
     }
-
-    .gallery-item-container .desc {
-        text-align: center;
-        font-family: "Indie Flower", cursive;
-        text-decoration:underline;
-        font-size: 1.2em;
-        color: var(--carbon-black);
-        padding:0px;
-        margin:0px;
-        
-        position:relative;
-        z-index:2;
-        background: rgba(248, 248, 248, 0.8);
-        transition: .3s;
-        bottom: 0;
-        left: 0;
-        transform: translate(0em, -2em);
-        opacity: 0;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .gallery-item {
-            width: calc(50% - 20px);
-        }
-    }
-
-    @media only screen and (max-width: 480px) {
-        .gallery-item {
-            width: calc(100% - 20px);
-
-        }
-    }
-
-
+}
