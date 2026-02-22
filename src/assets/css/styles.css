@@ -264,3 +264,81 @@ h1{
 
     }
 }
+
+/* ______LIGHTBOX______ */
+
+    .lightbox{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%; 
+        background-color : rgba(0,0,0,.9);
+        z-index:10;
+        overflow: auto;
+        animation: lightboxIn .5s;
+    }
+
+    .lightbox__prev,.lightbox__next{
+        border:none;
+        background:url(/assets/icons/arrow.svg) center center/ 100% 100%;
+        width:25px;
+        height:100%;
+        position: fixed;
+        top:0;
+        right:20px;
+        margin-top:-14px;
+        z-index:11;
+        opacity:.5;
+    }
+
+    .lightbox__prev{
+        right:auto;
+        left:20px;
+        transform: rotate(180deg);
+    }
+
+    .lightbox__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0 50px;
+    }
+
+    .lightbox__loader{
+        width:38px;
+        height:38px;
+        opacity:.5;
+        background:url(/assets/icons/loader.svg) center center no-repeat;
+    }
+
+    .lightbox__close{
+        width:25px;
+        height:25px;
+        background: url(/assets/icons/cross.svg) center center / 15px 15px no-repeat transparent;
+        position: fixed;
+        top: 20px;
+        right:20px;
+    }
+
+    .lightbox button{
+        opacity: .5;
+        cursor: pointer;
+        transition: opacity .3s;
+        text-indent: -3000px;
+    }
+
+    .lightbox button:hover{
+        opacity: 1;
+    }
+
+    .lightbox__container img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    @keyframes lightboxIn{
+        from {opacity:0;}
+        to {opacity: 1;}
+    }
