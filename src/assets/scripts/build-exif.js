@@ -2,8 +2,8 @@ const fs = require("fs/promises");
 const path = require("path");
 const { exiftool } = require("exiftool-vendored");
 
-const imageDir = "src/assets/photographs/sicily";
-const outputFile = "src/_data/photographs/photographs-sicily.json";
+const imageDir = "src/assets/photographs/sicily2test";
+const outputFile = "src/_data/photographs/photographs-sicily2test.json";
 
 async function build() {
   console.log("🚀 Build script started");
@@ -29,7 +29,7 @@ async function build() {
               : null,
             src: `/assets/photographs/${file}`,
             alt: path.parse(file).name,
-            album: "sicily",
+            album: "sicily2test",
             caption:""
           };
         } catch (err) {

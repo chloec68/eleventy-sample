@@ -1,11 +1,14 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Indie+Flower&display=swap');
+
 
 
 /* GENERAL */
 :root {
     --floral-white: #FFFAF1;
     --carbon-black: #191716;
+    --dark-purple:#3D348B;
+    --girly-pink:#FFB0FF;
 }
 
 html,
@@ -29,6 +32,15 @@ a{
     cursor: pointer;
 }
 
+h1{
+    text-align: center;
+    padding:1rem;
+    font-size:4em;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    color: var(--dark-purple);
+  
+}
+
 /* ______LAYOUT______ */
 .wrapper {
     width: 90%;
@@ -42,7 +54,7 @@ a{
 }
 
 .dark-mode .intro-wrapper, .dark-mode a{
-    color:#FFB0FF;
+    color:var(--girly-pink);
 }
 
 /* ______HEADER COMOPONENT______ */
@@ -65,7 +77,7 @@ a{
 }
 
 .header-wrapper a:hover {
-    color: #FFB0FF;
+    color: var(--girly-pink);
     transition: 0.2s ease;
 }
 
@@ -85,7 +97,7 @@ a{
     text-align: center;
     font-family: "Indie Flower", cursive;
     font-size: 3em;
-    color: #3D348B;
+    color: var(--dark-purple);
 }
 
 /* ______CATEGORIES COMPONENT______ */
