@@ -5,19 +5,30 @@ layout: "/layout.njk"
 
 <h1>{{title}}</h1>
 
-<div class="wrapper">
-    <a href="/photography/sicily" class="gallery-link">
-        <div class="single-element"><img src="../assets/icons/map-of-sicily.png" alt="map of Sicily"></div>
-        <div class="desc"><p>Sicily</p></div>
-    </a>
+<div class="gallery-wrapper">
+    <div class="element-container">
+        <a href="/photography/sicily" class="gallery-link">
+            <div class="img-container">
+                <img src="../assets/icons/map-of-sicily.png" alt="map of Sicily" class="map">
+            </div>
+            <div class="desc"><p>Sicily</p></div>
+        </a>
+    </div>
 
-    <a href="/photography/oz" class="gallery-link">
-        <div class="single-element"><img src="../assets/icons/map-of-australia.png" alt="map of Australia"></div>
-        <div class="desc"><p>Australia</p></div>
-    </a>
-
-    <a href="/photography/bali" class="gallery-link">
-        <div class="single-element"><img src="../assets/icons/map-of-bali.png" alt="map of Bali"></div>
-        <div class="desc"><p>Bali</p></div>
-    </a>
+    <div class="element-container">
+        <a href="/photography/oz" class="gallery-link">
+            <div class="img-container">
+                <img src="../assets/icons/map-of-australia.png" alt="map of Australia" class="map">
+            </div>
+            <div class="desc"><p>Australia</p></div>
+        </a>
+    </div>
+    <div class="element-container">
+        <a href="/photography/bali" class="gallery-link">
+            <div class="img-container">
+                <img src="../assets/icons/map-of-bali.png" alt="map of Bali" class="map">
+            </div>
+            <div class="desc"><p>Bali</p></div>
+        </a>
+    </div>
 </div>
