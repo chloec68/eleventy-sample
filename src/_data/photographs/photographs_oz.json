@@ -5,69 +5,78 @@
     "src": "/assets/photographs/IMG_20191021_100143-EDIT.jpg",
     "alt": "IMG_20191021_100143-EDIT",
     "album": "oz",
-    "caption":""
+    "caption":"The Grotto, Great Ocean Road, VIC"
   },
   {
     "title": "IMG_20191116_201628",
     "date": "2019-11-16T19:16:28.437Z",
     "src": "/assets/photographs/IMG_20191116_201628.jpg",
     "alt": "IMG_20191116_201628",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Koroop, VIC"
   },
   {
     "title": "IMG_20191121_150313-EDIT",
     "date": "2019-11-21T04:03:14.477Z",
     "src": "/assets/photographs/IMG_20191121_150313-EDIT.jpg",
     "alt": "IMG_20191121_150313-EDIT",
-    "album": "oz"
+    "album": "oz",
+    "caption": "Cootamundra, New South Wales"
   },
   {
     "title": "IMG_20191123_155318-EDIT",
     "date": "2019-11-23T04:53:19.480Z",
     "src": "/assets/photographs/IMG_20191123_155318-EDIT.jpg",
     "alt": "IMG_20191123_155318-EDIT",
-    "album": "oz"
+    "album": "oz",
+    "caption" : "Sydney, NSW"
   },
   {
     "title": "IMG_20200210_192252",
     "date": "2020-02-10T18:22:52.615Z",
     "src": "/assets/photographs/IMG_20200210_192252.jpg",
     "alt": "IMG_20200210_192252",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   },
   {
     "title": "IMG_20200210_192424",
     "date": "2020-02-10T18:24:25.483Z",
     "src": "/assets/photographs/IMG_20200210_192424.jpg",
     "alt": "IMG_20200210_192424",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   },
   {
     "title": "IMG_20200213_203202_BURST001_COVER-ANIMATION",
     "date": null,
     "src": "/assets/photographs/IMG_20200213_203202_BURST001_COVER-ANIMATION.gif",
     "alt": "IMG_20200213_203202_BURST001_COVER-ANIMATION",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   },
   {
     "title": "IMG_20200226_172922",
     "date": "2020-02-26T07:59:24.885Z",
     "src": "/assets/photographs/IMG_20200226_172922.jpg",
     "alt": "IMG_20200226_172922",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   },
   {
     "title": "IMG_20200226_173831",
     "date": "2020-02-26T08:08:33.691Z",
     "src": "/assets/photographs/IMG_20200226_173831.jpg",
     "alt": "IMG_20200226_173831",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   },
   {
     "title": "IMG_20200309_190040-EDIT",
     "date": "2020-03-09T08:00:40.522Z",
     "src": "/assets/photographs/IMG_20200309_190040-EDIT.jpg",
     "alt": "IMG_20200309_190040-EDIT",
-    "album": "oz"
+    "album": "oz",
+    "caption":"Pine Creek, Northern Territory"
   }
 ]
