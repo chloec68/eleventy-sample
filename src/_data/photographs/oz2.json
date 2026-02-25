@@ -1,86 +1,5 @@
 [
   {
-    "title": "IMG_20191021_100143-EDIT",
-    "date": "2019-10-20T22:58:43.249Z",
-    "src": "/assets/photographs/IMG_20191021_100143-EDIT.jpg",
-    "alt": "IMG_20191021_100143-EDIT",
-    "album": "oz",
-    "caption":"The Grotto, VIC"
-  },
-  {
-    "title": "IMG_20191116_201628",
-    "date": "2019-11-16T19:16:28.437Z",
-    "src": "/assets/photographs/IMG_20191116_201628.jpg",
-    "alt": "IMG_20191116_201628",
-    "album": "oz",
-    "caption":"Koroop, VIC"
-  },
-  {
-    "title": "IMG_20191121_150313-EDIT",
-    "date": "2019-11-21T04:03:14.477Z",
-    "src": "/assets/photographs/IMG_20191121_150313-EDIT.jpg",
-    "alt": "IMG_20191121_150313-EDIT",
-    "album": "oz",
-    "caption": "Cootamundra, NSW"
-  },
-  {
-    "title": "IMG_20191123_155318-EDIT",
-    "date": "2019-11-23T04:53:19.480Z",
-    "src": "/assets/photographs/IMG_20191123_155318-EDIT.jpg",
-    "alt": "IMG_20191123_155318-EDIT",
-    "album": "oz",
-    "caption" : "Sydney, NSW"
-  },
-  {
-    "title": "IMG_20200210_192252",
-    "date": "2020-02-10T18:22:52.615Z",
-    "src": "/assets/photographs/IMG_20200210_192252.jpg",
-    "alt": "IMG_20200210_192252",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-  {
-    "title": "IMG_20200210_192424",
-    "date": "2020-02-10T18:24:25.483Z",
-    "src": "/assets/photographs/IMG_20200210_192424.jpg",
-    "alt": "IMG_20200210_192424",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-  {
-    "title": "IMG_20200213_203202_BURST001_COVER-ANIMATION",
-    "date": null,
-    "src": "/assets/photographs/IMG_20200213_203202_BURST001_COVER-ANIMATION.gif",
-    "alt": "IMG_20200213_203202_BURST001_COVER-ANIMATION",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-  {
-    "title": "IMG_20200226_172922",
-    "date": "2020-02-26T07:59:24.885Z",
-    "src": "/assets/photographs/IMG_20200226_172922.jpg",
-    "alt": "IMG_20200226_172922",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-  {
-    "title": "IMG_20200226_173831",
-    "date": "2020-02-26T08:08:33.691Z",
-    "src": "/assets/photographs/IMG_20200226_173831.jpg",
-    "alt": "IMG_20200226_173831",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-  {
-    "title": "IMG_20200309_190040-EDIT",
-    "date": "2020-03-09T08:00:40.522Z",
-    "src": "/assets/photographs/IMG_20200309_190040-EDIT.jpg",
-    "alt": "IMG_20200309_190040-EDIT",
-    "album": "oz",
-    "caption":"Pine Creek, NT"
-  },
-
-  {
     "title": "20210122_170237",
     "date": "2021-01-22T16:02:37.000Z",
     "src": "/assets/photographs/oz2/20210122_170237.jpg",
@@ -125,6 +44,14 @@
     "date": "2021-01-27T07:31:02.000Z",
     "src": "/assets/photographs/oz2/20210127_083103.jpg",
     "alt": "20210127_083103",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "20210202_114642",
+    "date": "2021-02-02T10:46:42.022Z",
+    "src": "/assets/photographs/oz2/20210202_114642.jpg",
+    "alt": "20210202_114642",
     "album": "oz",
     "caption": ""
   },
@@ -208,19 +135,27 @@
     "album": "oz",
     "caption": ""
   },
-    {
-    "title": "20210421_065803",
-    "date": "2021-04-21T04:57:58.000Z",
-    "src": "/assets/photographs/oz2/20210421_065803.jpg",
-    "alt": "20210421_065803",
-    "album": "oz",
-    "caption": ""
-  },
   {
     "title": "IMG_20200823_175957",
     "date": "2020-08-23T15:59:58.560Z",
     "src": "/assets/photographs/oz2/IMG_20200823_175957.jpg",
     "alt": "IMG_20200823_175957",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "IMG_20200823_180000",
+    "date": "2020-08-23T16:00:01.304Z",
+    "src": "/assets/photographs/oz2/IMG_20200823_180000.jpg",
+    "alt": "IMG_20200823_180000",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "IMG_20200823_180027",
+    "date": "2020-08-23T16:00:28.568Z",
+    "src": "/assets/photographs/oz2/IMG_20200823_180027.jpg",
+    "alt": "IMG_20200823_180027",
     "album": "oz",
     "caption": ""
   },
@@ -281,14 +216,6 @@
     "caption": ""
   },
   {
-    "title": "IMG_20201104_174517",
-    "date": "2020-11-04T16:45:18.568Z",
-    "src": "/assets/photographs/oz2/IMG_20201104_174517.jpg",
-    "alt": "IMG_20201104_174517",
-    "album": "oz",
-    "caption": ""
-  },
-  {
     "title": "IMG_20201024_143714",
     "date": "2020-10-24T12:37:15.902Z",
     "src": "/assets/photographs/oz2/IMG_20201024_143714.jpg",
@@ -305,18 +232,18 @@
     "caption": ""
   },
   {
-    "title": "IMG_20201025_182302",
-    "date": "2020-10-25T14:11:14.104Z",
-    "src": "/assets/photographs/oz2/IMG_20201025_182302.jpg",
-    "alt": "IMG_20201025_182302",
-    "album": "oz",
-    "caption": ""
-  },
-  {
     "title": "IMG_20201025_180343",
     "date": "2020-10-25T17:03:44.611Z",
     "src": "/assets/photographs/oz2/IMG_20201025_180343.jpg",
     "alt": "IMG_20201025_180343",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "IMG_20201025_182302",
+    "date": "2020-10-25T14:11:14.104Z",
+    "src": "/assets/photographs/oz2/IMG_20201025_182302.jpg",
+    "alt": "IMG_20201025_182302",
     "album": "oz",
     "caption": ""
   },
@@ -337,10 +264,26 @@
     "caption": ""
   },
   {
+    "title": "IMG_20201104_174517",
+    "date": "2020-11-04T16:45:18.568Z",
+    "src": "/assets/photographs/oz2/IMG_20201104_174517.jpg",
+    "alt": "IMG_20201104_174517",
+    "album": "oz",
+    "caption": ""
+  },
+  {
     "title": "IMG_20201108_050704",
     "date": "2020-11-08T04:07:06.065Z",
     "src": "/assets/photographs/oz2/IMG_20201108_050704.jpg",
     "alt": "IMG_20201108_050704",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "IMG_20201110_175157",
+    "date": "2020-11-10T16:51:57.712Z",
+    "src": "/assets/photographs/oz2/IMG_20201110_175157.jpg",
+    "alt": "IMG_20201110_175157",
     "album": "oz",
     "caption": ""
   },
@@ -357,6 +300,14 @@
     "date": "2020-11-12T15:14:13.966Z",
     "src": "/assets/photographs/oz2/IMG_20201112_161413.jpg",
     "alt": "IMG_20201112_161413",
+    "album": "oz",
+    "caption": ""
+  },
+  {
+    "title": "IMG_20201112_161416",
+    "date": "2020-11-12T15:14:17.043Z",
+    "src": "/assets/photographs/oz2/IMG_20201112_161416.jpg",
+    "alt": "IMG_20201112_161416",
     "album": "oz",
     "caption": ""
   },
@@ -440,7 +391,4 @@
     "album": "oz",
     "caption": ""
   }
-
-
-  
 ]
