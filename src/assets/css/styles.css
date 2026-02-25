@@ -45,6 +45,10 @@ h1{
     margin:6rem auto 10rem auto;
 }
 
+main{
+    padding-bottom: 10rem;
+}
+
 /* ______DARK MODE______ */
 .dark-mode {
     background-color: var(--carbon-black);
@@ -71,11 +75,11 @@ h1{
     justify-content: space-between;
 }
 
-.header-links-container{
+/* .header-links-container{
     display: flex;
     gap: 2.5em;
     width: 50%;
-}
+} */
 
 #dark-mode-logo {
     width: 1.3em;
@@ -99,6 +103,26 @@ h1{
 
     }
 }
+
+/* ______FOOTER______ */
+    .footer{
+        width: 100%;
+        height: fit-content;
+        padding:3rem;
+        background-color: var(--carbon-black);
+    }
+
+    .footer a{
+        display: block;
+        width: fit-content;
+        margin: auto;
+        padding:0.5em;
+        text-decoration: none;
+        color: var(--floral-white);
+        font-size: 1.5em;
+        font-weight:100;
+        font-family: "Sono", monospace;
+    }
 
 /* ______HOME PAGE / INDEX______ */
 .welcome-logo-wrapper {
