@@ -1,7 +1,8 @@
 ---
-permalink: "/photography/bali/index.njk/"
 title: "Bali"
 layout: "/layout.njk/"
 ---
 
+{% import "macros/gallery.njk" as galleryMacros %}
 
+{{ galleryMacros.gallery(photographs.bali, "bali","Bali") }}
