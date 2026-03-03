@@ -1,6 +1,7 @@
 {% macro gallery(photographs,album,title) %}
 
-<h1>{{title}}</h1>
+
+<div class="album-title"><p id="album-length">{{ photographs.length }} pictures of</p><h1>{{title}}</h1></div>
 <div class="gallery">
     {% for entry in photographs %}
         {% if entry.album === album %}
@@ -17,8 +18,5 @@
         {% endif %}
     {% endfor %}
 </div>
-<a href="#to_top">To top</a>
+
   {% endmacro %}
-
-
-

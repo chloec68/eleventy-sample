@@ -45,9 +45,11 @@ h1{
     margin:6rem auto 10rem auto;
 }
 
+/* GENERAL */
 main{
     padding-bottom: 10rem;
 }
+
 
 /* ______DARK MODE______ */
 .dark-mode {
@@ -55,7 +57,7 @@ main{
     color: var(--floral-white) !important;
 }
 
-.dark-mode .intro-wrapper, .dark-mode a, .dark-mode h1,.dark-mode .header-wrapper a{
+.dark-mode .intro-wrapper, .dark-mode a,.dark-mode .header-wrapper a{
     color:var(--girly-pink);
 }
 /* ______LAYOUT______ */
@@ -64,6 +66,29 @@ main{
     margin: auto;
 }
 
+#top-button{
+    display: none; 
+    position: fixed; 
+    bottom: 250px; 
+    right: 30px; 
+    z-index: 99;
+
+    cursor: pointer; 
+    padding: 15px; 
+    transform: rotate(-45deg);
+    opacity: 0.9;
+    width:60px;
+    transition:.4s ease
+}
+
+#top-button:hover {
+    width:90px;
+    opacity: 1;
+}
+
+#top-button:active{
+    border:1px solid black;
+}
 /* ______HEADER______ */
 .header-wrapper {
     width: 100%;
@@ -131,22 +156,7 @@ main{
 }
 
 #welcome-logo {
-    width: 20%;
-}
-
-.intro-wrapper {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-family: "Indie Flower", cursive;
-    font-size: 3em;
-    color: var(--dark-purple);
-}
-
-@media only screen and (max-width: 480px) {
-    .intro-wrapper{
-        font-size:1em;
-    }
+    width: 40%;
 }
 
 /* ______CATEGORIES COMPONENT______ */
@@ -333,6 +343,18 @@ main{
     overflow: hidden;
 }
 
+.album-title{
+    margin:6rem auto 10rem auto
+}
+
+#album-length{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+    padding-right:10rem;
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
         .gallery {

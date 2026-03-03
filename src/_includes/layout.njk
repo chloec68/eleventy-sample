@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="icon" href="/assets/favicon/favicon.ico" />
 		<script type="module" src="/assets/scripts/lightbox.js" defer></script>
+		<script src="/assets/scripts/top-button.js"></script>
 		<title> {{ title }} </title>
 	</head>
 	
@@ -15,6 +16,8 @@
 				<main>
 					{{ content | safe }}
 				</main>
+				<img onclick="topFunction()" id="top-button" src="/assets/icons/up-right-arrow.png" alt="" >
+				{# <button id="top-button" onclick="topFunction()"></button> #}
 		</div>
 		{% include "components/footer.njk" ignore missing %}
 	</body>
@@ -35,12 +38,4 @@
 			darkModeButton.src = "/assets/icons/moon.png";
 		}
 	}
-
-
-
-				
-
-					
-			
-
 </script>
