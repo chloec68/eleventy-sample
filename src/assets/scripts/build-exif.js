@@ -2,8 +2,8 @@ const fs = require("fs/promises");
 const path = require("path");
 const { exiftool } = require("exiftool-vendored");
 
-const imageDir = "src/assets/photographs/oz3";
-const outputFile = "src/_data/photographs/oz3.json";
+const imageDir = "src/assets/photographs/bali";
+const outputFile = "src/_data/photographs/bali.json";
 
 async function build() {
   console.log("🚀 Build script started");
@@ -27,9 +27,9 @@ async function build() {
             date: tags.DateTimeOriginal
               ? tags.DateTimeOriginal.toDate()
               : null,
-            src: `/assets/photographs/oz3/${file}`,
+            src: `/assets/photographs/bali/${file}`,
             alt: path.parse(file).name,
-            album: "oz",
+            album: "bali",
             caption:""
           };
         } catch (err) {
