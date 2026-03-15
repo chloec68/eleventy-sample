@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf _site",
+    "build": "npm run clean && eleventy",
     "build:photos": "node src/assets/scripts/build-exif.js",
     "start": "eleventy --serve"
   },
@@ -14,6 +16,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
-    "exiftool-vendored": "^35.9.0"
+    "exiftool-vendored": "^35.9.0",
+    "fs-extra": "^11.3.4",
+    "sharp": "^0.34.5"
   }
 }

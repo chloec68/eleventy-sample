@@ -10,11 +10,11 @@ class Lightbox {
     // objectif : ajouter un "comportement" aux liens permettant d'ouvrir les imgs  
     static init () {
         //je sélectionne tous les liens qui mènent à une image 
-        // Je convertis la séquence intérable qu'est la NodeList contenue dans la constante links en Array
+        // Je convertis la séquence itérable qu'est la NodeList contenue dans la constante links en Array
         const links = Array.from(document.querySelectorAll('.lightbox-trigger'));
         // je crée une variable qui va stocker le chemin des images 
         // la méthode map() des instances de Array crée un nouveau tableau rempli avec les résultats
-        //de l'appel d'une focntion fournie sur chaque éléméent du tableau appelant 
+        //de l'appel d'une fonction fournie sur chaque éléméent du tableau appelant 
         const gallery = links.map(link => link.getAttribute('href'))       
         // pour chaque lien, j'ajoute un écouteur d'évènement ;
         // ainsi à chaque clique, une fonction sera déclenchée une fonction qui prend en paramètre un évènement e
@@ -24,6 +24,7 @@ class Lightbox {
             new Lightbox(e.currentTarget.getAttribute('href'), gallery) //initialisation d'une nouvelle lightbox à chaque clique d'un lien photo
             // e.currenTarget.getAttribute('href') => permet de récuperer le path de la photo cliquée
             //gallery => va permettre la comparaison ?
+
         }))
 
     }
